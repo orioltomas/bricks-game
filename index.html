@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Bricks Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./app.css">
+</head>
+<body>
+  <div id="game-over">
+    <div class="text">GAME OVER</div>
+    <div class="retry">TRY AGAIN</div>
+  </div>
+  <div id="level-up">
+    <div class="text">
+      <div class="arrows">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      LEVEL UP
+      <div class="arrows">
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+        <div class="arrow">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="game-container">
+    <div class="controls">
+      <div class="control">
+        <div>Play / Pause</div>
+        <div>( SPACE BAR )</div>
+      </div>
+      <div class="control">
+        <div>Restart</div>
+        <div>( R )</div>
+      </div>
+      <div class="control">
+        <div>Controls</div>
+        <div>( Left | Right )</div>
+      </div>
+    </div>
+    <canvas id="game" width="500" height="350"></canvas>
+    <div class="game-bar">
+      <div>POINTS: <span id="points"></span></div>
+      <div>LEVEL: <span id="level"></span></div>
+      <div>LIVES: <span id="lives"></span></div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./ball.js"></script>
+  <script type="text/javascript" src="./paddle.js"></script>
+  <script type="text/javascript" src="./bricks.js"></script>
+  <script type="text/javascript" src="./game.js"></script>
+  <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
